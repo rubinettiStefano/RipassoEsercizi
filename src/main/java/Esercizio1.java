@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Esercizio1
@@ -46,6 +47,13 @@ public class Esercizio1
 
 	private static void numeriAlti(List<Integer> tutti)
 	{
+		System.out.println("I 5 giocatori più forti che tu ha giocato lele");
+		 tutti.stream()//prendiamo la lista, diventa uno stream
+		.sorted(Comparator.reverseOrder())//ordiniamo i numeri in ordine discendente
+		.limit(5)//hai una lista di 10 numeri, tieni solo quelli dalla posizione 0 alla 4
+		.forEach(i-> System.out.println(i));//li ciclo, foreacho stampandoli uno ad uno
+		//for(Integer i:stream)riga sopra uguale a questa
+			//sout(i)
 	}
 
 	private static void pari(List<Integer> tutti)
