@@ -1,3 +1,5 @@
+import java.util.StringJoiner;
+
 public class Mobile
 {
 	private String nome,colore;
@@ -38,5 +40,15 @@ public class Mobile
 	public void setPeso(double peso)
 	{
 		this.peso = peso;
+	}
+
+	@Override
+	public String toString()
+	{
+		return new StringJoiner(" ", "", ".")
+				.add("nome: " + nome)
+				.add("colore: " + colore)
+				.add("peso: " + peso)
+				.toString();
 	}
 }
