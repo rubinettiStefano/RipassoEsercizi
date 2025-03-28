@@ -53,5 +53,35 @@ public class Esercizio2
 
 	private static void parolePalindrome(List<String> stringhe)
 	{
+		List<String> res = new ArrayList<>();
+
+		for(String s:stringhe)
+		{
+			char[] parola = s.toCharArray();
+			boolean palindroma=true;
+			//otto
+			//0 - o
+			//1 - t
+			//2 - t
+			//3 - o
+
+			//0 -> 2
+			//invece che scorre da inizio a fine
+			//scorro da inizio a metà
+
+			for(int i=0;i<(parola.length/2);i++)
+				//prendo prima lettera e ultima quando i=0
+				//prendo seconda lettera e penultima quando i=1
+				//e avanti così
+				//se non sono uguali dico che non è palindroma
+				if(parola[i]!=parola[parola.length-1-i])
+					palindroma=false;
+
+			if(palindroma)
+				res.add(s);
+		}
+
+		for(String s:res)
+			System.out.println(s);
 	}
 }

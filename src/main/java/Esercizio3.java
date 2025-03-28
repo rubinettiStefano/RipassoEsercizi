@@ -25,4 +25,12 @@ public class Esercizio3
 		//6) stampare i 5 mobili più pesanti
 		//7) Stampare solo la Sedia, trovandola grazie al nome
 	}
+
+	public static void mobiliPesanti(List<Mobile> tutti)
+	{
+		List<Mobile>res= tutti.stream().
+		sorted((m1,m2)->Double.compare(m1.getPeso(),m2.getPeso())).
+		limit(5).toList();
+		System.out.println(res);
+	}
 }
