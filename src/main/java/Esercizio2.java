@@ -13,10 +13,45 @@ public class Esercizio2
 		));
 
 		//stampare tutte le parole di meno di 5 lettere
+		paroleNonCorteMaDiLunghezzaMedia(stringhe);
 		//stampare tutte le parole che iniziano con a
+		paroleA(stringhe);
 		//stampare tutte parole che iniziano con a e finiscono con e oppure o
+		paroleAEO(stringhe);
 		//stampare tutte le parole che contengono almeno 4 lettere diverse
+		parole4lettereDiverse(stringhe);
 		//stamparle in ordine alfabetico, poi in ordine inverso
-		//stamparle solo i palindromi
+		paroleAlfabetico(stringhe);
+		paroleAlfabeticoInv(stringhe);
+		//stamparle solo i palindromi (anna,otto,osso)
+		parolePalindrome(stringhe);
+	}
+
+	private static void paroleNonCorteMaDiLunghezzaMedia(List<String> stringhe)
+	{
+	}
+
+	private static void paroleA(List<String> stringhe)
+	{
+	}
+
+	private static void paroleAEO(List<String> stringhe)
+	{
+	}
+
+	private static void parole4lettereDiverse(List<String> stringhe)
+	{
+	}
+
+	private static void paroleAlfabetico(List<String> stringhe)
+	{
+	}
+
+	private static void paroleAlfabeticoInv(List<String> stringhe)
+	{
+	}
+
+	private static void parolePalindrome(List<String> stringhe)
+	{
 	}
 }
